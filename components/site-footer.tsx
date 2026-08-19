@@ -96,19 +96,42 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
-          <p className="text-xs text-white/50">
-            © {new Date().getFullYear()} ClearLine F.M. Alle Rechte vorbehalten.
-          </p>
-          <div className="flex items-center gap-6">
-            <Link href="/impressum" className="text-xs text-white/60 transition-colors hover:text-white">
-              Impressum
-            </Link>
-            <Link href="/datenschutz" className="text-xs text-white/60 transition-colors hover:text-white">
-              Datenschutz
-            </Link>
-          </div>
-        </div>
+<div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
+  {/* Left */}
+  <p className="text-xs text-white/50">
+    © {new Date().getFullYear()} ClearLine F.M. Alle Rechte vorbehalten.
+  </p>
+
+  {/* Center */}
+  <p className="text-xs text-white/50">
+    Developed by{" "}
+    <a
+      href="https://clearline-ai.tech"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-white/70 transition-colors hover:text-white"
+    >
+      ClearLine Tech
+    </a>
+  </p>
+
+  {/* Right */}
+  <div className="flex items-center gap-6">
+    <Link
+      href="/impressum"
+      className="text-xs text-white/60 transition-colors hover:text-white"
+    >
+      Impressum
+    </Link>
+
+    <Link
+      href="/datenschutz"
+      className="text-xs text-white/60 transition-colors hover:text-white"
+    >
+      Datenschutz
+    </Link>
+  </div>
+</div>
       </div>
     </footer>
   )
